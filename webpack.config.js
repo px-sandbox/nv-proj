@@ -44,8 +44,8 @@ module.exports = {
     awsSamPlugin,
     new CopyPlugin({
       patterns: [
-        { from: "source", to: "dest" },
-        { from: "other", to: "public" },
+        { from: "src/prisma", to: ".aws-sam/build/MyFunction/prisma" },
+        { from: ".env", to: ".aws-sam/build/MyFunction" },
       ],
     }),
   ],

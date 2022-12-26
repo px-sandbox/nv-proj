@@ -16,6 +16,7 @@
     "@types/aws-lambda": "^8.10.109",
     "aws-sam-webpack-plugin": "^0.13.0",
     "copy-webpack-plugin": "^11.0.0",
+    "prisma": "^4.7.1",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
@@ -23,6 +24,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "@prisma/client": "^4.7.1",
     "aws-sdk": "^2.1278.0"
   }
 }

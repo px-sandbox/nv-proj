@@ -1,0 +1,19 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../src/prisma/"
+  binaryTargets = ["native", "linux-arm64-openssl-1.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://narendra:I3NUud-jl78in1jDhukmdw@rubber-tapir-3790.8nk.cockroachlabs.cloud:26257/nvdb?sslmode=verify-full" //"postgresql://canopy:password@localhost:5432/nvdb?schema=public" //env("DATABASE_URL")
+}
+
+model User {
+  id    BigInt  @id @default(autoincrement())
+  email String // @unique
+  name  String?
+}
