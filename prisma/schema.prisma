@@ -9,7 +9,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://narendra:I3NUud-jl78in1jDhukmdw@rubber-tapir-3790.8nk.cockroachlabs.cloud:26257/nvdb?sslmode=verify-full" //"postgresql://canopy:password@localhost:5432/nvdb?schema=public" //env("DATABASE_URL")
+  url      = "mongodb+srv://narendra:Qwerty%40123@cluster0.ync2eam.mongodb.net/?retryWrites=true&w=majority" //"postgresql://narendra:I3NUud-jl78in1jDhukmdw@rubber-tapir-3790.8nk.cockroachlabs.cloud:26257/nvdb?sslmode=verify-full" //"postgresql://canopy:password@localhost:5432/nvdb?schema=public" //env("DATABASE_URL")
 }
 
 model User {
