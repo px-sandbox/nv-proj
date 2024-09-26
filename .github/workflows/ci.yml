@@ -19,4 +19,5 @@ jobs:
       lint_command: echo "lint..."
       dev_test_branch: main
       run_dev_test: true
+      my_command: dir
     secrets: inherit
