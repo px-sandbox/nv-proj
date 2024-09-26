@@ -8,7 +8,8 @@
     "clean": "rimraf .aws-sam .vscode",
     "prebuild": "rimraf .aws-sam .vscode",
     "prewatch": "rimraf .aws-sam .vscode",
-    "watch": "webpack-cli -w"
+    "watch": "webpack-cli -w",
+    "test": "jest --coverage --coverageReporters='json-summary' --coverageReporters='lcov' --detectOpenHandles --runInBand --forceExit"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "@types/aws-lambda": "^8.10.109",
     "aws-sam-webpack-plugin": "^0.13.0",
     "copy-webpack-plugin": "^11.0.0",
+    "jest": "^29.7.0",
     "prisma": "^4.7.1",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.4.2",
