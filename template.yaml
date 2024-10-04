@@ -22,6 +22,8 @@ Resources:
               Path: /hello1
               Method: get
 
+\
+
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
