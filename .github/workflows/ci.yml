@@ -21,3 +21,8 @@ jobs:
       run_dev_test: true
       my_command: dir coverage
     secrets: inherit
+    permissions:
+      discussions: write
+      issues: write
+      pull-requests: write
+      security-events: write
