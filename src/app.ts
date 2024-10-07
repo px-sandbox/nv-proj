@@ -11,6 +11,8 @@ export const lambdaHandler = async (
   try {
     console.log("INSIDE HANDLER ###############");
     const user = await prisma.user.create({
+
+      
       data: {
         name: "Alice",
         email: "alice@prisma.io",
